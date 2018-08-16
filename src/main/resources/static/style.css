@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.registration-input-row {
+	line-height: 0px;
+}
+
+.registration-input-row-header {
+	font-size: 20px;
+	font-weight: bold;
+}
