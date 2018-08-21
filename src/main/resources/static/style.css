@@ -1,7 +1,18 @@
 @charset "UTF-8";
 
-.registration-input-row {
-	line-height: 0px;
+.form-wrapper {
+	text-align: center;
+}
+
+.form-wrapper input {
+	
+	border-left: none;
+	border-top: none;
+	border-right: none;
+	border-bottom: 2px solid black;
+	
+		
+
 }
 
 .registration-input-row-header {

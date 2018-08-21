@@ -7,6 +7,8 @@
 <title>Summary</title>
 </head>
 <body>
-	<h1>Hello, ${ first_name }!</h1>
+	<h1>Hello, ${ user.firstName } ${ user.lastName }!</h1>
+	<h2>E-mail: ${ user.emailAddress }</h2>
+	<h2>Phone: ${ user.phoneNumber }</h2>
 </body>
 </html>
