@@ -13,9 +13,10 @@
 <body>
 	<div class="container" style="max-width: 400px">
 	<p class="my-4 p-2 bg-danger text-center text-white rounded">- Registration Form -</p>
-		<form action="/user" method="post">
+		<form action="/summary" method="post">
 			
 	 		<div class="form-row">
+	 		
 		  		<div class="form-group col-md-6">
 	    			<label for="InputFirstName">First Name</label>
 	    			<input type="text" required minlength="2" name="firstName" id="InputFirstName" class="form-control" placeholder="First Name">
@@ -25,21 +26,22 @@
 	    			<label for="InputLastName">Last Name</label>
 	    			<input type="text" required name="lastName" id="InputLastName" class="form-control" placeholder="Last Name">
 	  			</div>
+	  			
   			</div>
 	  		
 	  		<div class="form-group">
     			<label for="InputEmail">Email address</label>
-    			<input type="email" required class="form-control" id="InputEmail" placeholder="Enter email">
+    			<input type="email" name="emailAddress" required class="form-control" id="InputEmail" placeholder="Enter email">
   			</div>
   			
-  			<div class="form-group">
+  			<!-- <div class="form-group">
     			<label for="InputEmail">Email address</label>
     			<input type="email" name="verifyEmail" required class="form-control" id="InputEmail" placeholder="Verify email">
-  			</div>
+  			</div> -->
   			
   			<div class="form-group">
     			<label for="InputPhoneNumber">Phone Number</label>
-    			<input type="text" required class="form-control" id="InputPhoneNumber" placeholder="Enter phone number">
+    			<input type="text" required name="phoneNumber" class="form-control" id="InputPhoneNumber" placeholder="Enter phone number">
   			</div>
   			
 	  		<div class="form-group">
