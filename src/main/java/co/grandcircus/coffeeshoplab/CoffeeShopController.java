@@ -7,6 +7,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import co.grandcircus.coffeeshoplab.dao.ItemsDao;
+import co.grandcircus.coffeeshoplab.dao.UsersDao;
+import co.grandcircus.coffeeshoplab.entity.Item;
+import co.grandcircus.coffeeshoplab.entity.User;
+
 @Controller
 public class CoffeeShopController {
 	

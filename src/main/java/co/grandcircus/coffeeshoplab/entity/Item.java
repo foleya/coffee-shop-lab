@@ -1,4 +1,4 @@
-package co.grandcircus.coffeeshoplab;
+package co.grandcircus.coffeeshoplab.entity;
 
 public class Item {
 
