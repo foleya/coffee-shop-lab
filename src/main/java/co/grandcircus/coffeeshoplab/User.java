@@ -1,22 +1,34 @@
 package co.grandcircus.coffeeshoplab;
 
 public class User {
-	
+
+	private int userId;
 	private String firstName;
 	private String lastName;
 	private String emailAddress;
 	private String phoneNumber;
 	private String password;
-	
-	public User () {};
-	
-	public User(String firstName, String lastName, String emailAddress, String phoneNumber, String password) {
+
+	public User() {
+	}
+
+	public User(int userId, String firstName, String lastName, String emailAddress, String phoneNumber,
+			String password) {
 		super();
+		this.userId = userId;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.emailAddress = emailAddress;
 		this.phoneNumber = phoneNumber;
 		this.password = password;
+	}
+
+	public int getUserId() {
+		return userId;
+	}
+
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 
 	public String getFirstName() {
@@ -61,12 +73,8 @@ public class User {
 
 	@Override
 	public String toString() {
-		return "User [firstName=" + firstName + ", lastName=" + lastName + ", emailAddress=" + emailAddress
-				+ ", phoneNumber=" + phoneNumber + ", password=" + password + "]";
-	}
+		return "User [userId=" + userId + ", firstName=" + firstName + ", lastName=" + lastName + ", emailAddress="
+				+ emailAddress + ", phoneNumber=" + phoneNumber + ", password=" + password + "]";
+	};
 	
-	
-	
-	
-
 }

@@ -13,7 +13,7 @@
 <body>
 	<div class="container" style="max-width: 400px">
 	<p class="my-4 p-2 bg-danger text-center text-white rounded">- Registration Form -</p>
-		<form action="/summary" method="post">
+		<form action="/create-user" method="post">
 			
 	 		<div class="form-row">
 	 		
@@ -49,10 +49,10 @@
     			<input type="password" required name="password" id="InputPassword" class="form-control" placeholder="Enter password">
   			</div>
   			
-  			<div class="form-group">
+  			<!-- <div class="form-group">
     			<label for="InputVerifyPassword">Confirm Password</label>
     			<input type="password" name="verifyPassword" required id="verifyPassword" class="form-control" placeholder="Verify password">
-  			</div>
+  			</div> -->
 
 	  		
 			<button class="btn btn-primary btn-lg btn-block">Submit!</button>
