@@ -48,7 +48,7 @@
 				</c:forEach>
 			</tbody>
 		</table>
-		<p><a href="/item/create">Create Item +</a></p>
+		<button class="btn btn-link"><a href="/item/create">Create Item +</a></button>
 	</main>
 </body>
 </html>

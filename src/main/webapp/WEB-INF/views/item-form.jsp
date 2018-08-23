@@ -28,7 +28,7 @@
 			<div class="form-group">
 			    <label for="name">Description</label>
 			    <!-- pre-populate the input value from the existing food (if any) -->
-			    <textarea class="form-control" id="description" name="description" value="${ item.description }" required rows="5" minlength="2" autocomplete="off"></textarea>
+			    <textarea class="form-control" id="description" name="description" required rows="5" minlength="2" autocomplete="off">${ item.description }</textarea>
 			</div>
 			
 			<div class="form-group">
@@ -43,7 +43,8 @@
 			    <input class="form-control" id="price" name="price" value="${ item.price }" required type="number" min="0.01" step="0.01" autocomplete="off">
 			</div>
 			
-			<button class="btn btn-primary mb-2 mr-2">Submit +</button>
+			<button class="btn btn-primary mb-2 mr-2">Save +</button>
+			<button type="button" onclick="location.href='/';" class="btn btn-secondary mb-2 mr-2">Cancel -</button>
 		</form>
 	</main>
 </body>
