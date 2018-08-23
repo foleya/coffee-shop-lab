@@ -61,7 +61,7 @@ public class CoffeeShopController {
 	public ModelAndView showCreateForm() {
 		return new ModelAndView("item-form", "title", "Add Item");
 	}
-
+	
 	@RequestMapping(value = "/item/create", method = RequestMethod.POST)
 	public ModelAndView submitCreateForm(Item item) {
 		itemDao.createItem(item);
