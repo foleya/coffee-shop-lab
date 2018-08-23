@@ -1,7 +1,14 @@
 package co.grandcircus.coffeeshoplab.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class User {
 
+	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int userId;
 	private String firstName;
 	private String lastName;
@@ -9,8 +16,7 @@ public class User {
 	private String phoneNumber;
 	private String password;
 
-	public User() {
-	}
+	public User() {}
 
 	public User(int userId, String firstName, String lastName, String emailAddress, String phoneNumber,
 			String password) {
