@@ -43,7 +43,7 @@
 					<td>${ item.quantity }</td>
 					<td>$${ item.price }</td>
 					<td><a href="/item/${ item.itemId }/update">Edit</td>
-					<td><a href="/delete-item/${ item.itemId }">Delete</td>
+					<td><a href="/delete-item/${ item.itemId }" onclick="return confirm('Are you sure you want to delete this?')">Delete</td>
 				</tr>
 				</c:forEach>
 			</tbody>
